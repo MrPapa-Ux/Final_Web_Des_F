@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #e0f7e0; /* Light green background */
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "sidenav main main"
+    "sidenav main main"
+    "footer footer footer";
+  grid-template-rows: 50px 1fr 1fr 50px;
+  grid-template-columns: 200px 1fr 1fr;
+  height: 100vh;
+}
+
+.header {
+  grid-area: header;
+  background-color: #4caf50; /* Green background */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  color: white;
+}
+
+.header__search {
+  font-size: 1.2em;
+}
+
+.header__avatar {
+  display: flex;
+  align-items: center;
+}
+
+.avatar-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+
+.sidenav {
+  grid-area: sidenav;
+  background-color: #388e3c; /* Darker green background */
+  color: white;
+  padding: 20px;
+}
+
+.sidenav__list {
+  list-style: none;
+}
+
+.sidenav__list-item {
+  margin: 20px 0;
+}
+
+.main {
+  grid-area: main;
+  background-color: #a5d6a7; /* Light green background */
+  padding: 20px;
+}
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.main-header__heading {
+  font-size: 1.5em;
+}
+
+.main-header__updates {
+  font-size: 1em;
+}
+
+.main-overview {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.overviewcard {
+  background-color: #66bb6a; /* Medium green background */
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+.overviewcard:hover {
+  transform: translateY(-10px); /* Lift up on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+
+.main-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.card {
+  background-color: #81c784; /* Medium green background */
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+.card:hover {
+  transform: translateY(-10px); /* Lift up on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+
+.footer {
+  grid-area: footer;
+  background-color: #4caf50; /* Green background */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  color: white;
+}
