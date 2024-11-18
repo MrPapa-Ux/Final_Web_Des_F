@@ -1,75 +1,92 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="index-final-style.css" />
-    <title>Final Web Design - CSS Grid Page Dashboard</title>
+    <title>Dashboard Glenvidi Yosua</title>
   </head>
   <body>
     <div class="grid-container">
+      <!-- Menu Icon -->
       <div class="menu-icon">
         <i class="fas fa-bars"></i>
       </div>
 
+      <!-- Header -->
       <header class="header">
-        <div class="header__search">Search...</div>
+        <div class="header__search">
+          <input type="text" id="search" placeholder="Cari sesuatu..." />
+        </div>
         <div class="header__avatar">
           <img
             src="assets/Diriku.jpg"
-            alt="Profile Picture"
+            alt="Foto Profil Glenvidi"
             class="avatar-img"
+            tabindex="0"
           />
         </div>
       </header>
 
+      <!-- Sidebar Navigation -->
       <aside class="sidenav">
         <div class="sidenav__close-icon">
           <i class="fas fa-times"></i>
         </div>
         <ul class="sidenav__list">
-          <li class="sidenav__list-item">Item One</li>
-          <li class="sidenav__list-item">Item Two</li>
-          <li class="sidenav__list-item">Item Three</li>
-          <li class="sidenav__list-item">Item Four</li>
-          <li class="sidenav__list-item">Item Five</li>
+          <li class="sidenav__list-item">Beranda</li>
+          <li class="sidenav__list-item">Profil</li>
+          <li class="sidenav__list-item">Pengaturan</li>
+          <li class="sidenav__list-item">Riwayat</li>
+          <li class="sidenav__list-item">Keluar</li>
         </ul>
       </aside>
 
+      <!-- Main Content -->
       <main class="main">
+        <!-- Heading -->
         <div class="main-header">
-          <div class="main-header__heading">Hello User</div>
-          <div class="main-header__updates">Recent Items</div>
+          <div class="main-header__heading">Halo, Glenvidi Yosua Gerungan</div>
+          <div class="main-header__updates">Item Terbaru</div>
         </div>
+
+        <!-- Overview Cards -->
         <div class="main-overview">
           <div class="overviewcard">
-            <div class="overviewcard__icon">Overview</div>
-            <div class="overviewcard__info">Card</div>
+            <div class="overviewcard__icon">Statistik</div>
+            <div class="overviewcard__info">Kartu 1</div>
           </div>
           <div class="overviewcard">
-            <div class="overviewcard__icon">Overview</div>
-            <div class="overviewcard__info">Card</div>
+            <div class="overviewcard__icon">Statistik</div>
+            <div class="overviewcard__info">Kartu 2</div>
           </div>
           <div class="overviewcard">
-            <div class="overviewcard__icon">Overview</div>
-            <div class="overviewcard__info">Card</div>
+            <div class="overviewcard__icon">Statistik</div>
+            <div class="overviewcard__info">Kartu 3</div>
           </div>
           <div class="overviewcard">
-            <div class="overviewcard__icon">Overview</div>
-            <div class="overviewcard__info">Card</div>
+            <div class="overviewcard__icon">Statistik</div>
+            <div class="overviewcard__info">Kartu 4</div>
           </div>
         </div>
+
+        <!-- Detailed Cards -->
         <div class="main-cards">
-          <div class="card">Card</div>
-          <div class="card">Card</div>
-          <div class="card">Card</div>
+          <div class="card">Informasi Penting 1</div>
+          <div class="card">Informasi Penting 2</div>
+          <div class="card">Informasi Penting 3</div>
         </div>
       </main>
 
+      <!-- Footer -->
       <footer class="footer">
-        <div class="footer__copyright">&copy; 2024 UK</div>
-        <div class="footer__signature">Made with love by pure genius</div>
+        <div class="footer__copyright">&copy; 2024 Glenvidi Yosua Gerungan</div>
+        <div class="footer__signature">
+          Dibuat dengan penuh cinta oleh Glenvidi
+        </div>
       </footer>
     </div>
+
+    <script src="index-final-script.js"></script>
   </body>
 </html>
