@@ -58,25 +58,6 @@ h3 {
 .header__avatar {
   display: flex;
   align-items: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.header__avatar:hover {
-  transform: scale(1.1); /* Sedikit memperbesar gambar profil */
-  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2); /* Tambahkan bayangan saat hover */
-}
-
-.avatar-img {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  border: 2px solid #0dec62; /* Warna latar hijau lembut */
-  object-fit: cover;
-  transition: transform 0.3s ease, border-color 0.3s ease; /* Efek transisi halus */
-}
-
-.header__avatar:hover .avatar-img {
-  border-color: #2f855a; /* Ganti warna border menjadi hijau tua saat hover */
 }
 
 /* Styling for Suasana Hati Section */
