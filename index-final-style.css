@@ -50,6 +50,34 @@ h3 {
   font-size: 14px;
 }
 
+.header__avatar {
+  display: flex;
+  align-items: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease,
+    background-color 0.3s ease;
+}
+
+.header__avatar:hover {
+  transform: scale(1.1); /* Membesarkan profil sedikit */
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2); /* Memberikan efek bayangan */
+  background-color: #a3f9b0; /* Warna hijau pastel sebagai latar belakang */
+  border-radius: 50%; /* Membuat area hover bulat */
+}
+
+.avatar-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid #38a169; /* Warna hijau sedang */
+  object-fit: cover;
+  transition: border-color 0.3s ease, transform 0.3s ease; /* Transisi pada border dan transformasi */
+}
+
+.header__avatar:hover .avatar-img {
+  border-color: #2f855a; /* Warna hijau tua pada hover */
+  transform: rotate(10deg); /* Sedikit memiringkan gambar */
+}
+
 .header__search input:focus {
   outline: none;
   border-color: #38a169; /* Hijau sedang */
@@ -223,6 +251,21 @@ h3 {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   text-align: left;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-image {
+  width: 100%; /* Gambar akan memenuhi lebar card */
+  height: 200px; /* Sesuaikan tinggi gambar */
+  object-fit: cover; /* Memastikan gambar dipotong dengan baik */
+  border-radius: 5px; /* Membuat sudut gambar mengikuti sudut card */
+  margin-bottom: 5px; /* Memberi jarak antara gambar dan konten */
+}
+
+.card-span .card-image {
+  width: 100%; /* Gambar memenuhi seluruh lebar */
+  height: auto; /* Aspek rasio gambar tetap terjaga */
+  object-fit: cover; /* Memastikan gambar mengisi area dengan baik */
+  border-radius: 5px; /* Tambahkan sudut membulat jika diperlukan */
 }
 
 .card:hover {
